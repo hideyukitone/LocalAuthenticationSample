@@ -9,6 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var button: UIButton! {
+        didSet {
+            switch LocalAuthenticationManager.biometryType {
+            case .touchId:
+                button.setTitle("TouchID認証", for: .normal)
+            case .faceId:
+                button.setTitle("FaceID認証", for: .normal)
+            case .none:
+                button.isHidden = true
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +32,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func pressButton(_ sender: Any) {
+        LocalAuthenticationManager.evaluatePolicy { result in
+            print(result)
+        }
+    }
 }
 

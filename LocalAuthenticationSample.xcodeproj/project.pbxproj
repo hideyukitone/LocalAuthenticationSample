@@ -14,6 +14,7 @@
 		87A702FA1FD28B050030B523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A702F81FD28B050030B523 /* LaunchScreen.storyboard */; };
 		87A703051FD28B050030B523 /* LocalAuthenticationSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A703041FD28B050030B523 /* LocalAuthenticationSampleTests.swift */; };
 		87A703101FD28B060030B523 /* LocalAuthenticationSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7030F1FD28B060030B523 /* LocalAuthenticationSampleUITests.swift */; };
+		87A7031E1FD28E4F0030B523 /* LocalAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7031D1FD28E4F0030B523 /* LocalAuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		87A7030B1FD28B060030B523 /* LocalAuthenticationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalAuthenticationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A7030F1FD28B060030B523 /* LocalAuthenticationSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationSampleUITests.swift; sourceTree = "<group>"; };
 		87A703111FD28B060030B523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87A7031D1FD28E4F0030B523 /* LocalAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				87A702F61FD28B050030B523 /* Assets.xcassets */,
 				87A702F81FD28B050030B523 /* LaunchScreen.storyboard */,
 				87A702FB1FD28B050030B523 /* Info.plist */,
+				87A7031D1FD28E4F0030B523 /* LocalAuthenticationManager.swift */,
 			);
 			path = LocalAuthenticationSample;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				87A702F21FD28B050030B523 /* ViewController.swift in Sources */,
 				87A702F01FD28B050030B523 /* AppDelegate.swift in Sources */,
+				87A7031E1FD28E4F0030B523 /* LocalAuthenticationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2CCPT32P8;
 				INFOPLIST_FILE = LocalAuthenticationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hideyuki.okuni.LocalAuthenticationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M2CCPT32P8;
 				INFOPLIST_FILE = LocalAuthenticationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hideyuki.okuni.LocalAuthenticationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
